@@ -281,8 +281,11 @@ val longValue = 5432l  // Do NOT do this
 
 
 ### <a name='doc'>Documentation Style</a>
+In short, documentation and comments will __NOT__ be maintained, so please refrain from adding comments/documentation. 
 
-Use Java docs style instead of Scala docs style.
+If you need to add comments, always ask whether refactoring your code or renaming your method/variables makes the code self-explaninary. 
+
+In rare cases that documention is necessary, use Java docs style instead of Scala docs style.
 ```scala
 /** This is a correct one-liner, short description. */
 
