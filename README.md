@@ -344,7 +344,17 @@ Of course, the situation in which a class grows this long is strongly discourage
   _______ blank line _______
   com.databricks  // or org.apache.spark if you are working on Spark
   ```
+- For any Java objects and colletions that share the same name as some classes in Scala, please rename the Java class with a prefix __J__ for differentiation, like below:
+  * `import java.lang.{Double => JDouble}`
+  * `import java.util.{Map => JMap, Iterator => JIterator}`
+  * `import java.util.concurrent.{Future => JFuture}`
 
+- Prefer immutable collections in Scala. If need any mutable. collection, please import the mutable package only.
+  ```
+  import scala.collection.mutable
+
+  val a = mutable.Map[X, Y]()
+  ```
 
 ### <a name='pattern-matching'>Pattern Matching</a>
 
