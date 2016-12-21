@@ -933,7 +933,9 @@ abstract class Listener {
 
 ### <a name='java-type-alias'>Type Aliases</a>
 
-Do NOT use type aliases. They are not visible in bytecode (and Java).
+Do NOT use type aliases. They are not visible in bytecode (and Java). 
+
+Type aliaes can only be used within the same class to shortern certain class types like Map[Map[]].  Always rethink whether it makes sense to define a class for the structure. 
 
 
 ### <a name='java-default-param-values'>Default Parameter Values</a>
