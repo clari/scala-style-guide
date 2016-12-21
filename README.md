@@ -43,6 +43,7 @@ Scala is an incredibly powerful language that is capable of many paradigms. We h
     - [Exception Handling (Try vs try)](#exception)
     - [Options](#option)
     - [Monadic Chaining](#chaining)
+    - [String Interpolation](#string-interpolation)
   3. [Concurrency](#concurrency)
     - [Scala concurrent.Map](#concurrency-scala-collection)
     - [Explicit Synchronization vs Concurrent Collections](#concurrency-sync-vs-map)
@@ -731,6 +732,13 @@ def getAddress(name: String): Option[String] = {
 
 ```
 
+## <a name='string-interpolation'>String Interpolation</a>
+Scala provides connenient way for string intepolation. Please use {} to wrap the varaible. 
+ ```
+ val a = "123"
+ val b = s"${a}bc" // correct
+ val c = s"$a bc"  // incorrect  
+ ```
 
 ## <a name='concurrency'>Concurrency</a>
 
