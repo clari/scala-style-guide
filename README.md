@@ -134,10 +134,10 @@ In general:
 
 ### <a name='indent'>Spacing and Indentation</a>
 
-- Use 4-space indentation in general, though Java is using 2-space indention. 
+- Use 4-space indentation awlays 
   ```scala
   if (true) {
-    println("Wow!")
+      println("Wow!")
   }
   ```
 
