@@ -16,6 +16,7 @@ Scala is an incredibly powerful language that is capable of many paradigms. We h
   1. [Syntactic Style](#syntactic)
     - [Naming Convention](#naming)
     - [Variable Naming Convention](#variable-naming)
+    - [Class Naming Convention: Manager, Service, Helper, Handler](#class-naming)
     - [Line Length](#linelength)
     - [Rule of 30](#rule_of_30)
     - [Spacing and Indentation](#indent)
@@ -115,6 +116,9 @@ We mostly follow Java's and Scala's standard naming conventions.
 
 - It is OK to use one-character variable names in small, localized scope. For example, "i" is commonly used as the loop index for a small loop body (e.g. 10 lines of code). However, do NOT use "l" (as in Larry) as the identifier, because it is very difficult to differentiate "l" from "1", "|", "I".
 
+### <a name='class-naming'>Class Naming Convention: Manager, Service, Helper, Handler</a>
+- Data structure or model class should be defined as case class in scala. 
+- In terms of scope,  `service` < `handler` < `Manager`. In other words, manager will be at the highest level handling all the business logic. `Helper` should be kept as Object in scala (or static class in Java)
 
 ### <a name='linelength'>Line Length</a>
 
